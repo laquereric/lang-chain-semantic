@@ -1,4 +1,3 @@
-
 export const sectionsData = [
   {
     id: 'problem',
@@ -38,7 +37,7 @@ export const sectionsData = [
     ],
     imagePlaceholder: 'Tiered Business Model',
     imageBgColor: 'bg-rose-100',
-    imgSrc: "https://images.unsplash.com/photo-1573495627363-c6dd80937019"
+    imgSrc: "https://storage.googleapis.com/hostinger-horizons-assets-prod/5139d417-c972-44ee-b188-1397963c2935/226e7618507ec7087d7f7d5998e4d74f.png"
   },
   {
     id: 'technology',
@@ -64,7 +63,7 @@ export const sectionsData = [
     ],
     imagePlaceholder: 'Team and Partners',
     imageBgColor: 'bg-teal-100',
-    imgSrc: "https://images.unsplash.com/photo-1522071820081-009f0129c710"
+    imgSrc: "https://storage.googleapis.com/hostinger-horizons-assets-prod/5139d417-c972-44ee-b188-1397963c2935/8c4a39689eadc66e807aa3859fbce987.png"
   },
   {
     id: 'financials',
@@ -90,4 +89,3 @@ export const navLinks = [
   { href: '#financials', label: 'Financials' },
   { href: '#contact', label: 'Contact' },
 ];
-  
