@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  fuseki:
+    image: stain/jena-fuseki
+    container_name: fuseki
+    environment:
+      - ADMIN_PASSWORD=admin
+      - JVM_ARGS=-Xmx2g
+    ports:
+      - "3030:3030"
+    volumes:
+      - fuseki-data:/fuseki
+    restart: unless-stopped
+
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyter
+    container_name: jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    depends_on:
+      - fuseki
+    restart: unless-stopped
+
+volumes:
+  fuseki-data:
