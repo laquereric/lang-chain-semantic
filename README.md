@@ -1,6 +1,6 @@
-# LangGraphSemantic
+# LangChainSemantic
 
-LangGraphSemantic is a library that connects Pydantic models to SHACL shapes in RDF stores, with specific support for LangChain and LangGraph. It enables semantic validation, storage, and retrieval of structured data in a way that leverages the strengths of all involved technologies.
+LangChainSemantic is a library that connects Pydantic models to SHACL shapes in RDF stores, with specific support for LangChain and LangGraph. It enables semantic validation, storage, and retrieval of structured data in a way that leverages the strengths of all involved technologies.
 
 ## Features
 
